@@ -3,97 +3,175 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fun Games &amp; Funny Games</title>
-<meta name="description" content="Fun Games &amp; Funny Games - casual mobile games for Android: Draw Rescue, FunCopter and more.">
-<link rel="icon" type="image/png" href="assets/icons/draw-rescue.png">
-<style>
-  :root {
-    color-scheme: light;
-    --bg: #ffffff; --fg: #1f2330; --muted: #5d6475;
-    --card: #f5f6fa; --line: rgba(128,128,128,.25); --link: #4f46e5;
-  }
-  body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--fg);
-         max-width: 680px; margin: 0 auto; padding: 3rem 1.25rem; line-height: 1.6; }
-  h1 { font-size: 1.8rem; margin: 0 0 .35rem; }
-  p.tag { color: var(--muted); margin-top: 0; }
-  a { color: var(--link); }
-  h2 { font-size: 1.1rem; margin: 2.25rem 0 1rem; }
-  .game { display: flex; gap: 1rem; align-items: flex-start; background: var(--card);
-          border: 1px solid var(--line); border-radius: 16px; padding: 1rem; margin-bottom: 1rem; }
-  .game img { width: 88px; height: 88px; border-radius: 20px; flex: none; }
-  .game h3 { font-size: 1.1rem; margin: 0 0 .2rem; }
-  .game p { margin: 0 0 .5rem; color: var(--muted); }
-  .links { display: flex; flex-wrap: wrap; gap: .35rem 1rem; font-size: .95rem; }
-  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line);
-           font-size: .92rem; color: var(--muted); }
-  @media (max-width: 420px) {
-    .game img { width: 64px; height: 64px; border-radius: 15px; }
-  }
-</style>
+<title>Fun Games &amp; Funny Games | Casual games for Android</title>
+<meta name="description" content="Fun Games &amp; Funny Games makes bright, easy-to-learn games for Android: Draw Rescue, FunCopter, Fun Math, Fun Run Maze Game, Gold Warrior, Numbers Game.">
+<link rel="canonical" href="https://yclsoftware-hash.github.io/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fun Games &amp; Funny Games">
+<meta property="og:title" content="Fun Games &amp; Funny Games | Casual games for Android">
+<meta property="og:description" content="Fun Games &amp; Funny Games makes bright, easy-to-learn games for Android: Draw Rescue, FunCopter, Fun Math, Fun Run Maze Game, Gold Warrior, Numbers Game.">
+<meta property="og:url" content="https://yclsoftware-hash.github.io/">
+<meta property="og:image" content="https://yclsoftware-hash.github.io/assets/img/draw-rescue/feature.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css?v=b3ac218e">
 </head>
 <body>
-  <h1>Fun Games &amp; Funny Games</h1>
-  <p class="tag">Casual mobile games for Android.</p>
-
-  <h2>Our games</h2>
-
-  <div class="game">
-    <img src="assets/icons/draw-rescue.png" alt="Draw Rescue icon">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/" aria-label="Fun Games &amp; Funny Games home"><img src="/assets/logo.svg" alt="" width="38" height="38"><span>Fun Games &amp; Funny Games</span></a>
+    <nav class="nav" aria-label="Main"><a href="/#games">Games</a><a href="/#about">About</a><a href="/#contact">Contact</a></nav>
+    <a class="btn btn-dark btn-sm nav-cta" href="https://play.google.com/store/apps/dev?id=6015396465325869230"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.9v16.2c0 .8.9 1.3 1.6.9l13.3-8.1c.6-.4.6-1.3 0-1.7L6.6 3c-.7-.4-1.6.1-1.6.9z"/></svg>Google Play</a>
+    <details class="menu">
+      <summary aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></summary>
+      <div class="menu-panel"><a href="/#games">Games</a><a href="/#about">About</a><a href="/#contact">Contact</a><a class="btn btn-dark btn-sm" href="https://play.google.com/store/apps/dev?id=6015396465325869230"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.9v16.2c0 .8.9 1.3 1.6.9l13.3-8.1c.6-.4.6-1.3 0-1.7L6.6 3c-.7-.4-1.6.1-1.6.9z"/></svg>Google Play</a></div>
+    </details>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="container hero-grid">
     <div>
-      <h3><a href="funfunnygames/PuzzleGame/">Draw Rescue</a></h3>
-      <p>Draw a line, save the ball, roll it into its own cup. A one-handed physics game.</p>
-      <div class="links">
-        <a href="https://play.google.com/store/apps/details?id=com.FunGames_FunnyGames.Ball_Game.Road_Draw.Physics_Ball_Game.Ball_Game">Google Play</a>
-        <a href="funfunnygames/PuzzleGame/privacy.html">Privacy policy</a>
+      <span class="eyebrow"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></i>Independent mobile game studio</span>
+      <h1>Small games,<br><span class="grad-text">big smiles.</span></h1>
+      <p class="lead">We make bright, easy-to-learn games for Android: physics puzzles, sky-high arcade action, maze races and learning games for kids.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#games">Explore our games <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="store-btn" href="https://play.google.com/store/apps/dev?id=6015396465325869230"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.9v16.2c0 .8.9 1.3 1.6.9l13.3-8.1c.6-.4.6-1.3 0-1.7L6.6 3c-.7-.4-1.6.1-1.6.9z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
       </div>
+      <div class="hero-note"><span class="stack"><img src="/assets/icons/draw-rescue.png" alt="" width="32" height="32"><img src="/assets/icons/funcopter.png" alt="" width="32" height="32"></span>Draw Rescue and FunCopter are live on Google Play</div>
+    </div>
+    <div class="icon-cloud" aria-hidden="true"><figure><img src="/assets/icons/draw-rescue.png" alt="Draw Rescue" width="256" height="256"></figure><figure><img src="/assets/icons/funcopter.png" alt="FunCopter" width="256" height="256"></figure><figure><img src="/assets/icons/fun-math.png" alt="Fun Math" width="256" height="256"></figure><figure><img src="/assets/icons/fun-run-maze.png" alt="Fun Run Maze Game" width="256" height="256"></figure><figure><img src="/assets/icons/gold-warrior.png" alt="Gold Warrior" width="256" height="256"></figure><figure><img src="/assets/icons/numbers-game.png" alt="Numbers Game" width="256" height="256"></figure></div>
+  </div>
+</section>
+
+<section class="section" id="games">
+  <div class="container">
+    <div class="section-head"><span class="kicker">Now on Google Play</span><h2>Play our latest games</h2><p>Free to download on Android phones and tablets.</p></div>
+    <div class="showcase">
+      <article class="feature-card" style="--accent:#d6246e;--accent-soft:#fdebf3;--game-grad:radial-gradient(120% 95% at 50% 0%, #ff72a8 0%, #b3249c 55%, #5a1a8e 100%);--cta-grad:linear-gradient(120deg, #7a2fd0 0%, #c02793 50%, #ff4f8b 100%)">
+  <div class="feature-media fan"><img src="/assets/img/draw-rescue/shot-1.jpg" alt="" width="540" height="960" loading="lazy"><img src="/assets/img/draw-rescue/shot-2.jpg" alt="" width="540" height="960" loading="lazy"><img src="/assets/img/draw-rescue/shot-3.jpg" alt="" width="540" height="960" loading="lazy"></div>
+  <div class="feature-body">
+    <div class="app-row">
+      <img src="/assets/icons/draw-rescue.png" alt="Draw Rescue icon" width="68" height="68">
+      <div><h3><a href="/funfunnygames/PuzzleGame/">Draw Rescue</a></h3><div class="genre">Ball physics puzzle</div></div>
+    </div>
+    <p>Draw a line, save the ball and roll it into the cup of its own color. One finger, real physics and new levels to try.</p>
+    <div class="card-actions">
+      <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.FunGames_FunnyGames.Ball_Game.Road_Draw.Physics_Ball_Game.Ball_Game"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.9v16.2c0 .8.9 1.3 1.6.9l13.3-8.1c.6-.4.6-1.3 0-1.7L6.6 3c-.7-.4-1.6.1-1.6.9z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+      <a class="text-link" href="/funfunnygames/PuzzleGame/">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+    <div class="card-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><a href="/funfunnygames/PuzzleGame/privacy.html">Privacy policy</a></div>
+  </div>
+</article><article class="feature-card" style="--accent:#1270d0;--accent-soft:#e5f2ff;--game-grad:radial-gradient(120% 95% at 50% 0%, #86d8ff 0%, #2b8ef1 50%, #1645b5 100%);--cta-grad:linear-gradient(120deg, #1645b5 0%, #2b8ef1 60%, #4fc3ff 100%)">
+  <div class="feature-media land"><img src="/assets/img/funcopter/shot-1.jpg" alt="" width="960" height="540" style="aspect-ratio:960/540" loading="lazy"></div>
+  <div class="feature-body">
+    <div class="app-row">
+      <img src="/assets/icons/funcopter.png" alt="FunCopter icon" width="68" height="68">
+      <div><h3><a href="/funfunnygames/FunCopter/">FunCopter</a></h3><div class="genre">Helicopter air combat</div></div>
+    </div>
+    <p>Choose your helicopter, attack but don&#x27;t crash! Collect gold, unlock new copters and fly past monsters and aliens.</p>
+    <div class="card-actions">
+      <a class="store-btn" href="https://play.google.com/store/apps/details?id=plane.helicopter_bird_flying.Wing"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.9v16.2c0 .8.9 1.3 1.6.9l13.3-8.1c.6-.4.6-1.3 0-1.7L6.6 3c-.7-.4-1.6.1-1.6.9z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+      <a class="text-link" href="/funfunnygames/FunCopter/">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+    <div class="card-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><a href="/funfunnygames/FunCopter/privacy.html">Privacy policy</a></div>
+  </div>
+</article>
     </div>
   </div>
+</section>
 
-  <div class="game">
-    <img src="assets/icons/funcopter.png" alt="FunCopter icon">
-    <div>
-      <h3>FunCopter</h3>
-      <p>Choose your helicopter, attack but don't crash, join the fun!</p>
-      <div class="links">
-        <a href="funfunnygames/FunCopter/privacy.html">Privacy policy</a>
+<section class="section section-white" id="coming-soon">
+  <div class="container">
+    <div class="section-head"><span class="kicker">Coming soon</span><h2>More games on the way</h2><p>These games are getting ready for Google Play. Store links will appear here as soon as they are live.</p></div>
+    <div class="game-grid">
+      <article class="game-card" style="--accent:#11803f;--accent-soft:#e5f6ec;--game-grad:radial-gradient(120% 95% at 50% 0%, #86efac 0%, #22a55b 50%, #0f6b38 100%);--cta-grad:linear-gradient(120deg, #0f6b38 0%, #22a55b 55%, #5fd68e 100%)">
+  <img src="/assets/icons/fun-math.png" alt="Fun Math icon" width="72" height="72" loading="lazy">
+  <div>
+    <h3><a href="/funfunnygames/FunMath/">Fun Math: Math Games</a></h3>
+    <div class="meta">Math learning game</div>
+    <span class="chip chip-soon">Coming soon</span>
+  </div>
+  <p>Practice addition, subtraction, multiplication and division with game-style challenges that get harder as you level up.</p>
+  <a class="text-link" href="/funfunnygames/FunMath/">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</article><article class="game-card" style="--accent:#c2510c;--accent-soft:#fff0e3;--game-grad:radial-gradient(120% 95% at 50% 0%, #ffc07a 0%, #ef7422 50%, #9c3d0a 100%);--cta-grad:linear-gradient(120deg, #9c3d0a 0%, #e0661b 55%, #ffa45c 100%)">
+  <img src="/assets/icons/fun-run-maze.png" alt="Fun Run Maze Game icon" width="72" height="72" loading="lazy">
+  <div>
+    <h3><a href="/funfunnygames/FunRunMaze/">Fun Run Maze Game</a></h3>
+    <div class="meta">Maze running race</div>
+    <span class="chip chip-soon">Coming soon</span>
+  </div>
+  <p>Race through the maze, find the right way, collect gold and slow down your rivals with power-ups.</p>
+  <a class="text-link" href="/funfunnygames/FunRunMaze/">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</article><article class="game-card" style="--accent:#a86b00;--accent-soft:#fff4d6;--game-grad:radial-gradient(120% 95% at 50% 0%, #ffe07a 0%, #f0a90e 50%, #8f5200 100%);--cta-grad:linear-gradient(120deg, #7a4500 0%, #d48a06 55%, #ffc93d 100%)">
+  <img src="/assets/icons/gold-warrior.png" alt="Gold Warrior icon" width="72" height="72" loading="lazy">
+  <div>
+    <h3><a href="/funfunnygames/GoldWarrior/">Gold Warrior</a></h3>
+    <div class="meta">Action adventure</div>
+    <span class="chip chip-soon">Coming soon</span>
+  </div>
+  <p>Fight zombies and goblins, rescue the captured people and power up the golden warrior level by level.</p>
+  <a class="text-link" href="/funfunnygames/GoldWarrior/">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</article><article class="game-card" style="--accent:#0b776d;--accent-soft:#e0f5f2;--game-grad:radial-gradient(120% 95% at 50% 0%, #7ff0de 0%, #14a393 50%, #0a5f57 100%);--cta-grad:linear-gradient(120deg, #0a5f57 0%, #14a393 55%, #4fd9c4 100%)">
+  <img src="/assets/icons/numbers-game.png" alt="Numbers Game icon" width="72" height="72" loading="lazy">
+  <div>
+    <h3><a href="/funfunnygames/NumbersGame/">Numbers Game and Math Game</a></h3>
+    <div class="meta">Numbers and math for kids</div>
+    <span class="chip chip-soon">Coming soon</span>
+  </div>
+  <p>Kids learn English numbers by listening and practice simple sums in a race against time.</p>
+  <a class="text-link" href="/funfunnygames/NumbersGame/">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about">
+    <div class="section-head"><span class="kicker">About us</span><h2>Fun first, then everything else</h2><p>Fun Games &amp; Funny Games is a small independent studio. We build games you can understand in seconds and keep coming back to: clear rules, short levels and plenty of personality.</p></div>
+    <div class="values">
+      <div class="value"><div class="ico violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/><path d="M13 13l6 6"/></svg></div><h3>Easy to pick up</h3><p>Simple controls and short levels you can play in a coffee break.</p></div>
+      <div class="value"><div class="ico pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>For every age</h3><p>Friendly games that kids and grown-ups can enjoy together.</p></div>
+      <div class="value"><div class="ico amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div><h3>Play anywhere</h3><p>Draw Rescue and FunCopter both work without an internet connection.</p></div>
+      <div class="value"><div class="ico sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Made for the world</h3><p>Our store pages are translated into dozens of languages.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0" id="contact">
+  <div class="container">
+    <div class="cta-band">
+      <div><h2>Questions or feedback?</h2><p>Get in touch for support, ideas or privacy requests.</p></div>
+      <div class="cta-actions"><a class="btn btn-white" href="mailto:funfunnygames1@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>funfunnygames1@gmail.com</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/"><img src="/assets/logo.svg" alt="" width="38" height="38"><span>Fun Games &amp; Funny Games</span></a>
+        <p>Small, bright and easy-to-learn games for Android.</p>
       </div>
+      <div><h4>Games</h4><ul><li><a href="/funfunnygames/PuzzleGame/">Draw Rescue</a></li><li><a href="/funfunnygames/FunCopter/">FunCopter</a></li><li><a href="/funfunnygames/FunMath/">Fun Math</a></li><li><a href="/funfunnygames/FunRunMaze/">Fun Run Maze Game</a></li><li><a href="/funfunnygames/GoldWarrior/">Gold Warrior</a></li><li><a href="/funfunnygames/NumbersGame/">Numbers Game</a></li></ul></div>
+      <div><h4>Privacy policies</h4><ul><li><a href="/funfunnygames/PuzzleGame/privacy.html">Draw Rescue</a></li><li><a href="/funfunnygames/FunCopter/privacy.html">FunCopter</a></li><li><a href="/funfunnygames/FunMath/privacy.html">Fun Math</a></li><li><a href="/funfunnygames/FunRunMaze/privacy.html">Fun Run Maze Game</a></li><li><a href="/funfunnygames/GoldWarrior/privacy.html">Gold Warrior</a></li><li><a href="/funfunnygames/NumbersGame/privacy.html">Numbers Game</a></li></ul></div>
+      <div><h4>Studio</h4><ul>
+        <li><a href="/#about">About us</a></li>
+        <li><a href="https://play.google.com/store/apps/dev?id=6015396465325869230">All games on Google Play</a></li>
+        <li><a href="mailto:funfunnygames1@gmail.com">funfunnygames1@gmail.com</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Fun Games &amp; Funny Games. All rights reserved.</span>
+      <span>Google Play is a trademark of Google LLC.</span>
     </div>
   </div>
-
-  <div class="game">
-    <img src="https://lh3.googleusercontent.com/rH-zbQbF7BBERzM4Rp7t5Dz9DGk0zRLvsHeeARSgqyhKcw1RyN4kxLHSEgSx-4aAZc-2=s256" alt="Fun Math icon">
-    <div>
-      <h3>Fun Math: Math Games</h3>
-      <p>Practice math the fun way. Questions get harder as you level up, for all ages.</p>
-    </div>
-  </div>
-
-  <div class="game">
-    <img src="https://lh3.googleusercontent.com/oFwUAdUTK5O70ZTi88lwuJT3sEAryT8xfPHZq5YXU8O1NgWWZ2fsD2_96sRzeSQuoJA=s256" alt="Fun Run Maze Game icon">
-    <div>
-      <h3>Fun Run Maze Game</h3>
-      <p>Find the right way through the maze, collect gold and slow down your rivals.</p>
-    </div>
-  </div>
-
-  <div class="game">
-    <img src="https://lh3.googleusercontent.com/sVB1m_UNNBJseOsAmqgQKDY2kdDH6MREQ7eXUI8vtm2nVu7hpJ65ZjN_hJlyxuhGFw=s256" alt="Gold Warrior icon">
-    <div>
-      <h3>Gold Warrior</h3>
-      <p>Save your country from zombies and goblins and rescue the captured people.</p>
-    </div>
-  </div>
-
-  <div class="game">
-    <img src="https://lh3.googleusercontent.com/DCHsRmhAFwX3XXpA2ehTto74hQwWFMBbKJJr8GQNupdvmMmo45Gx3zSIRV4rUnJKtA=s256" alt="Numbers Game and Math Game icon">
-    <div>
-      <h3>Numbers Game and Math Game</h3>
-      <p>Learn English numbers by listening and practice simple sums. Made for kids.</p>
-    </div>
-  </div>
-
-  <footer>
-    Contact: <a href="mailto:funfunnygames1@gmail.com">funfunnygames1@gmail.com</a>
-  </footer>
+</footer>
 </body>
 </html>

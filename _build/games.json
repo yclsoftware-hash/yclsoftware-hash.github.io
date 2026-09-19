@@ -1,0 +1,259 @@
+[
+  {
+    "slug": "draw-rescue",
+    "folder": "PuzzleGame",
+    "name": "Draw Rescue",
+    "title": "Draw Rescue: Ball Physics Game",
+    "package": "com.FunGames_FunnyGames.Ball_Game.Road_Draw.Physics_Ball_Game.Ball_Game",
+    "live": true,
+    "genre": "Ball physics puzzle",
+    "theme": {
+      "accent": "#d6246e",
+      "soft": "#fdebf3",
+      "grad": "radial-gradient(120% 95% at 50% 0%, #ff72a8 0%, #b3249c 55%, #5a1a8e 100%)",
+      "cta": "linear-gradient(120deg, #7a2fd0 0%, #c02793 50%, #ff4f8b 100%)"
+    },
+    "short": "Draw a line, save the ball and roll it into the cup of its own color. One finger, real physics and new levels to try.",
+    "tagline": "Draw a line. Save the ball. Roll it into the right cup.",
+    "intro": "Colored balls fall from above and each one has to reach the cup of its own color before your ink runs out. One simple move, real physics and a fresh challenge in every level.",
+    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["globe", "12 languages"], ["pointer", "One finger"]],
+    "shotAlts": ["Draw a line, save the ball", "Roll it into the right cup", "Build combos", "Beat the obstacles", "New levels keep coming"],
+    "sections": [
+      {
+        "type": "steps",
+        "kicker": "How to play",
+        "title": "Four simple moves",
+        "items": [
+          ["Draw", "Drag one finger to draw a line. Your ink is limited and the line fades after a moment."],
+          ["Bounce", "Every ball rolls with real physics: slopes, bounces, spin and speed all matter."],
+          ["Match", "Send each ball into the cup that matches its color."],
+          ["Combo", "Rescue balls back to back to build a combo and multiply your score."]
+        ]
+      },
+      {
+        "type": "features",
+        "cols": 2,
+        "kicker": "Always something new",
+        "title": "A drawing game that keeps changing",
+        "text": "Levels keep being added, so there is always one more to try.",
+        "items": [
+          ["layers", "Special pieces", "Glass that has to break first, switch colors, ice shells, bombs and jokers."],
+          ["target", "Obstacles", "Pegs, ramps, spinning gears, wind bands, funnels, crates, lasers and locked cups."],
+          ["pen", "Different lines", "Slick, bouncy, sticky, painting and permanent lines change how every level plays."],
+          ["award", "Different goals", "Fill the cups, break the glass, hit a combo, finish flawless, paint the floor or find the treasure cup."]
+        ]
+      },
+      {
+        "type": "perks",
+        "kicker": "Made for short sessions",
+        "title": "Play it anywhere, any time",
+        "items": [
+          ["pointer", "One finger", "Simple rules, no setup."],
+          ["clock", "About a minute", "Perfect for a queue or a coffee break."],
+          ["offline", "Play offline", "No internet needed."],
+          ["check", "No surprise ads", "A video only plays when you tap a reward button yourself."]
+        ],
+        "note": "Game languages: English, Turkish, Spanish, Portuguese, German, French, Russian, Arabic, Hindi, Chinese, Japanese and Korean."
+      }
+    ],
+    "cta": "Ready to draw your first line?"
+  },
+  {
+    "slug": "funcopter",
+    "folder": "FunCopter",
+    "name": "FunCopter",
+    "title": "FunCopter: Helicopter Game",
+    "package": "plane.helicopter_bird_flying.Wing",
+    "live": true,
+    "genre": "Helicopter air combat",
+    "theme": {
+      "accent": "#1270d0",
+      "soft": "#e5f2ff",
+      "grad": "radial-gradient(120% 95% at 50% 0%, #86d8ff 0%, #2b8ef1 50%, #1645b5 100%)",
+      "cta": "linear-gradient(120deg, #1645b5 0%, #2b8ef1 60%, #4fc3ff 100%)"
+    },
+    "short": "Choose your helicopter, attack but don't crash! Collect gold, unlock new copters and fly past monsters and aliens.",
+    "tagline": "Choose your helicopter, attack but don't crash, join the fun!",
+    "intro": "A high-speed air combat game full of thrilling maneuvers. Take down enemies in the sky, dodge the obstacles that await you and fight your way to victory.",
+    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["users", "For kids and adults"]],
+    "sections": [
+      {
+        "type": "features",
+        "cols": 3,
+        "kicker": "Features",
+        "title": "Built for sky-high fun",
+        "items": [
+          ["star", "Fun helicopters", "Collect gold to unlock more fun flying helicopters."],
+          ["zap", "Unique attacks", "Each helicopter has its own armed attack and a special ability, so try different copters on tough levels."],
+          ["shield", "Power-ups", "Special items give you protective shields, shrinking and gold enlargement."],
+          ["compass", "Strange planets", "Explore different planets full of monsters and aliens."],
+          ["target", "Bombs on board", "Your helicopters carry bombs to clear the obstacles ahead."],
+          ["offline", "Play anywhere", "No internet connection needed to play."]
+        ]
+      }
+    ],
+    "cta": "Ready for take-off?"
+  },
+  {
+    "slug": "fun-math",
+    "folder": "FunMath",
+    "name": "Fun Math",
+    "title": "Fun Math: Math Games",
+    "package": "com.fun.best.math.game.funfunnygames",
+    "live": false,
+    "genre": "Math learning game",
+    "theme": {
+      "accent": "#11803f",
+      "soft": "#e5f6ec",
+      "grad": "radial-gradient(120% 95% at 50% 0%, #86efac 0%, #22a55b 50%, #0f6b38 100%)",
+      "cta": "linear-gradient(120deg, #0f6b38 0%, #22a55b 55%, #5fd68e 100%)"
+    },
+    "short": "Practice addition, subtraction, multiplication and division with game-style challenges that get harder as you level up.",
+    "tagline": "Practice math the fun way.",
+    "intro": "Math questions turn into games: answer correctly and your character attacks, answer wrong and the enemy strikes back. Levels get harder step by step, from the four operations up to more advanced questions.",
+    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["users", "For all ages"]],
+    "sections": [
+      {
+        "type": "steps",
+        "kicker": "Game modes",
+        "title": "Three ways to practice",
+        "items": [
+          ["Battle", "Your correct answers attack your character's enemy. Answer wrong and the enemy attacks you."],
+          ["Reach the number", "Get a target number for your level and reach it by combining numbers with the operations."],
+          ["Listen and find", "Listen to numbers spoken in English and pick the right one while you learn them."]
+        ]
+      },
+      {
+        "type": "features",
+        "cols": 2,
+        "kicker": "What you practice",
+        "title": "All four operations",
+        "items": [
+          ["plus", "Addition and subtraction", "Warm up with sums and differences, then speed up."],
+          ["divide", "Multiplication and division", "Move on to times tables and division questions."],
+          ["trending", "Levels that grow with you", "As the levels progress, the questions become more difficult."],
+          ["refresh", "Learn by repeating", "Replay a level as often as you like to get better at it."]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "fun-run-maze",
+    "folder": "FunRunMaze",
+    "name": "Fun Run Maze Game",
+    "title": "Fun Run Maze Game",
+    "package": "com.fun_run.maze_game.funfunnygames",
+    "live": false,
+    "genre": "Maze running race",
+    "theme": {
+      "accent": "#c2510c",
+      "soft": "#fff0e3",
+      "grad": "radial-gradient(120% 95% at 50% 0%, #ffc07a 0%, #ef7422 50%, #9c3d0a 100%)",
+      "cta": "linear-gradient(120deg, #9c3d0a 0%, #e0661b 55%, #ffa45c 100%)"
+    },
+    "short": "Race through the maze, find the right way, collect gold and slow down your rivals with power-ups.",
+    "tagline": "This is not just running: find the right way!",
+    "intro": "Race against your rivals through a 3D maze. Use the map to find the right path, grab gold to unlock new characters and use your abilities to slow the others down.",
+    "chips": [["smartphone", "Android"], ["users", "Race your rivals"], ["star", "Unlock characters"]],
+    "sections": [
+      {
+        "type": "features",
+        "cols": 3,
+        "kicker": "In the maze",
+        "title": "Think fast, run smart",
+        "items": [
+          ["map", "Learn the map", "Use the navigation to find the right way instead of just running."],
+          ["star", "Collect gold", "Gold in the maze unlocks more characters to run with."],
+          ["crosshair", "Throw objects", "Pick up objects and throw them to slow your rivals down. Careful, they can do the same to you."]
+        ]
+      },
+      {
+        "type": "features",
+        "cols": 2,
+        "kicker": "Mystery boxes",
+        "title": "Grab the question-mark boxes",
+        "items": [
+          ["eye", "See the path", "Reveal the right way through the maze for a short time."],
+          ["zap", "Lightning", "Throw lightning at all of your opponents at once."],
+          ["wind", "Speed boost", "Run faster than everyone else."],
+          ["target", "Traps", "Set a trap for the runners behind you."]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "gold-warrior",
+    "folder": "GoldWarrior",
+    "name": "Gold Warrior",
+    "title": "Gold Warrior",
+    "package": "com.fungames.goldwarrior",
+    "live": false,
+    "genre": "Action adventure",
+    "theme": {
+      "accent": "#a86b00",
+      "soft": "#fff4d6",
+      "grad": "radial-gradient(120% 95% at 50% 0%, #ffe07a 0%, #f0a90e 50%, #8f5200 100%)",
+      "cta": "linear-gradient(120deg, #7a4500 0%, #d48a06 55%, #ffc93d 100%)"
+    },
+    "short": "Fight zombies and goblins, rescue the captured people and power up the golden warrior level by level.",
+    "tagline": "Save your country from zombies and goblins.",
+    "intro": "The golden warrior's country has been overrun by zombies and goblins, and its people have been taken prisoner. In each level he rescues some of the captives, defeats every enemy and faces tougher bosses along the way.",
+    "chips": [["smartphone", "Android"], ["award", "Boss battles"], ["trending", "Upgrades"]],
+    "sections": [
+      {
+        "type": "perks",
+        "kicker": "The adventure",
+        "title": "A warrior on a rescue mission",
+        "items": [
+          ["users", "Rescue prisoners", "Free some of the captured people in every level."],
+          ["award", "Boss enemies", "Face many bosses as the game goes on."],
+          ["heart", "Health and energy", "Break barrels and chests with your sword to refill them."],
+          ["layers", "New abilities", "The level screen shows when each new feature unlocks."]
+        ]
+      },
+      {
+        "type": "features",
+        "cols": 3,
+        "kicker": "Upgrades",
+        "title": "Grow stronger",
+        "items": [
+          ["star", "Gold level", "Raise it to earn more from every gold coin you collect."],
+          ["shield", "Shield level", "Raise it to take less damage from enemies."],
+          ["zap", "Critical level", "Raise it to deal double damage to enemies."]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "numbers-game",
+    "folder": "NumbersGame",
+    "name": "Numbers Game",
+    "title": "Numbers Game and Math Game",
+    "package": "com.mathnumber.com",
+    "live": false,
+    "genre": "Numbers and math for kids",
+    "theme": {
+      "accent": "#0b776d",
+      "soft": "#e0f5f2",
+      "grad": "radial-gradient(120% 95% at 50% 0%, #7ff0de 0%, #14a393 50%, #0a5f57 100%)",
+      "cta": "linear-gradient(120deg, #0a5f57 0%, #14a393 55%, #4fd9c4 100%)"
+    },
+    "short": "Kids learn English numbers by listening and practice simple sums in a race against time.",
+    "tagline": "Learn numbers by listening.",
+    "intro": "A simple learning game for children: hear a number in English and find it, or solve easy sums before the time runs out. It helps kids improve their listening and understanding.",
+    "chips": [["smartphone", "Android"], ["users", "For kids"], ["volume", "English numbers"]],
+    "sections": [
+      {
+        "type": "features",
+        "cols": 3,
+        "kicker": "How it works",
+        "title": "Listen, count and win",
+        "items": [
+          ["volume", "Listen and find", "Hear numbers spoken in English and pick the right one."],
+          ["plus", "Simple sums", "Easy addition questions made for young learners."],
+          ["clock", "Beat the clock", "Race against time and try to win the game."]
+        ]
+      }
+    ]
+  }
+]
