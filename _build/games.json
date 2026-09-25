@@ -6,17 +6,17 @@
     "title": "Draw Rescue: Ball Physics Game",
     "package": "com.FunGames_FunnyGames.Ball_Game.Road_Draw.Physics_Ball_Game.Ball_Game",
     "live": true,
-    "genre": "Ball physics puzzle",
+    "genre": "Ball physics game",
     "theme": {
       "accent": "#d6246e",
       "soft": "#fdebf3",
       "grad": "radial-gradient(120% 95% at 50% 0%, #ff72a8 0%, #b3249c 55%, #5a1a8e 100%)",
       "cta": "linear-gradient(120deg, #7a2fd0 0%, #c02793 50%, #ff4f8b 100%)"
     },
-    "short": "Draw a line, save the ball and roll it into the cup of its own color. One finger, real physics and new levels to try.",
+    "short": "Draw a line, save the ball and roll it into the cup of its own color. One finger, real physics, boss levels and new worlds to explore.",
     "tagline": "Draw a line. Save the ball. Roll it into the right cup.",
     "intro": "Colored balls fall from above and each one has to reach the cup of its own color before your ink runs out. One simple move, real physics and a fresh challenge in every level.",
-    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["globe", "12 languages"], ["pointer", "One finger"]],
+    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["globe", "12 languages"], ["pointer", "One finger"], ["cloud", "Cloud save"]],
     "shotAlts": ["Draw a line, save the ball", "Roll it into the right cup", "Build combos", "Beat the obstacles", "New levels keep coming"],
     "sections": [
       {
@@ -44,6 +44,45 @@
         ]
       },
       {
+        "type": "features",
+        "cols": 3,
+        "kicker": "New worlds",
+        "title": "From candy valleys to the clouds",
+        "text": "Every world brings new toys to play with, and bosses are waiting along the way.",
+        "items": [
+          ["star", "Amusement park", "Bumpers, balloons to pop, cups on rails, portals and festival levels full of surprise balls."],
+          ["target", "Slingshots and swinging cups", "Launch balls with a slingshot, open gates with buttons and drop them into cups that sway like a Ferris wheel."],
+          ["wind", "Sky worlds", "Upside-down gravity, slow moon gravity, big fans and birds that carry the balls away."],
+          ["compass", "Black holes and magnet lines", "Black holes pull the balls in, while a magnet line pulls them toward your drawing."],
+          ["zap", "Special balls and super combos", "Magnet, lightning, time and rainbow balls help you out, and two of them can merge into a super combo."],
+          ["shield", "Boss levels", "Face the Juggler and the Storm Bird and bring them down with your cups and special balls."]
+        ]
+      },
+      {
+        "type": "perks",
+        "kicker": "Boosters",
+        "title": "Pick a booster before you play",
+        "text": "Choose a booster when a level starts and pay for it with diamonds.",
+        "items": [
+          ["plus", "+5 Balls", "Start the level with 5 extra balls."],
+          ["heart", "+1 Life", "One more mistake allowed in Flawless levels."],
+          ["layers", "Fixed Color", "Color-changing balls keep their color."],
+          ["minus", "Remove Cup", "One of 3 cups is removed, the rest get wider."]
+        ]
+      },
+      {
+        "type": "features",
+        "cols": 3,
+        "kicker": "Google Play Games",
+        "title": "Your progress, on every phone",
+        "text": "Signing in is optional: you can play without it.",
+        "items": [
+          ["award", "Achievements", "Unlock achievements as you rescue balls and clear levels."],
+          ["trending", "Leaderboards", "Compare the balls you have rescued and your highest level with other players."],
+          ["cloud", "Cloud save", "Pick up where you left off on a new phone, with your diamonds and boosters."]
+        ]
+      },
+      {
         "type": "perks",
         "kicker": "Made for short sessions",
         "title": "Play it anywhere, any time",
@@ -53,7 +92,7 @@
           ["offline", "Play offline", "No internet needed."],
           ["check", "No surprise ads", "A video only plays when you tap a reward button yourself."]
         ],
-        "note": "Game languages: English, Turkish, Spanish, Portuguese, German, French, Russian, Arabic, Hindi, Chinese, Japanese and Korean."
+        "note": "Free to play, with optional in-app purchases (diamonds and unlimited lives). Game languages: English, Turkish, Spanish, Portuguese, German, French, Russian, Arabic, Hindi, Chinese, Japanese and Korean."
       }
     ],
     "cta": "Ready to draw your first line?"

@@ -53,6 +53,8 @@ ICONS = {
     'crosshair': '<circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/>',
     'eye': '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>',
     'wind': '<path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/>',
+    'cloud': '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>',
+    'minus': '<circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/>',
     'volume': '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>',
 }
 PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.9v16.2c0 .8.9 1.3 1.6.9l13.3-8.1c.6-.4.6-1.3 0-1.7L6.6 3c-.7-.4-1.6.1-1.6.9z"/></svg>'
@@ -250,7 +252,7 @@ def build_home(games):
     <div>
       <span class="eyebrow"><i>{icon('smile')}</i>Independent mobile game studio</span>
       <h1>Small games,<br><span class="grad-text">big smiles.</span></h1>
-      <p class="lead">We make bright, easy-to-learn games for Android: physics puzzles, sky-high arcade action, maze races and learning games for kids.</p>
+      <p class="lead">We make bright, easy-to-learn games for Android: ball physics games, sky-high arcade action, maze races and learning games for kids.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#games">Explore our games {icon('arrow')}</a>
         {store_button(DEV_URL)}
