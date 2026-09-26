@@ -16,7 +16,8 @@ Pillow gerekir (`pip install pillow`).
 | `build.py` | Ortak üst menü + alt bilgi + sayfa şablonları |
 | `../assets/css/site.css` | Tüm tasarım |
 
-Üretilen sayfalar: `index.html`, `404.html`, `funfunnygames/<Klasör>/index.html` ve `privacy.html`.
+Üretilen sayfalar: `index.html`, `404.html`, `funfunnygames/<Klasör>/index.html` ve `privacy.html`,
+`sitemap.xml` (yayında olsun olmasın tüm oyunlar) ve `robots.txt`.
 
 ## Sık işler
 

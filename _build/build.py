@@ -492,6 +492,21 @@ def build_404(games):
                 '/assets/img/draw-rescue/feature.jpg', main)
 
 
+# ---------- sitemap / robots ----------
+
+def build_sitemap(games):
+    # Every game is listed, live or not, so upcoming games are indexed before launch.
+    paths = ['/'] + [p for g in games for p in (game_url(g), privacy_url(g))]
+    urls = ''.join(f'  <url><loc>{BASE}{p}</loc></url>\n' for p in paths)
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            f'{urls}</urlset>\n')
+
+
+def build_robots():
+    return f'User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n'
+
+
 def write(rel, text):
     path = ROOT / rel
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -506,6 +521,8 @@ def main():
     for g in games:
         write(f"funfunnygames/{g['folder']}/index.html", build_game(games, g))
         write(f"funfunnygames/{g['folder']}/privacy.html", build_privacy(games, g))
+    write('sitemap.xml', build_sitemap(games))
+    write('robots.txt', build_robots())
 
 
 if __name__ == '__main__':
