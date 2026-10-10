@@ -19,6 +19,8 @@ BASE = 'https://yclsoftware-hash.github.io'
 STUDIO = 'Fun Games & Funny Games'
 EMAIL = 'funfunnygames1@gmail.com'
 DEV_URL = 'https://play.google.com/store/apps/dev?id=6015396465325869230'
+YT_CHANNEL = 'https://www.youtube.com/channel/UCR7H89TC9bQYi17n5LC_Ytg'
+YT_SUBSCRIBE = YT_CHANNEL + '?sub_confirmation=1'
 
 esc = html.escape
 
@@ -102,6 +104,24 @@ def store_button(url, light=False):
             '<span><small>Get it on</small><strong>Google Play</strong></span></a>')
 
 
+YT = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6'
+      's-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5'
+      'a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg>')
+
+
+def subscribe_button(cls='btn btn-yt'):
+    return f'<a class="{cls}" href="{YT_SUBSCRIBE}">{YT}Subscribe on YouTube</a>'
+
+
+def video_embed(g):
+    """Privacy-enhanced YouTube player, loaded lazily."""
+    v = g['video']
+    shape = 'video vertical' if v.get('vertical') else 'video'
+    return (f'<div class="{shape}"><iframe src="https://www.youtube-nocookie.com/embed/{v["id"]}?rel=0" '
+            f'title="{esc(v["title"])}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" '
+            'referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>')
+
+
 SOON_BADGE = f'<span class="store-btn soon">{PLAY}<span><small>Coming soon to</small><strong>Google Play</strong></span></span>'
 
 
@@ -168,6 +188,7 @@ def footer(games):
       <div><h4>Studio</h4><ul>
         <li><a href="/#about">About us</a></li>
         <li><a href="{DEV_URL}">All games on Google Play</a></li>
+        <li><a href="{YT_CHANNEL}">YouTube channel</a></li>
         <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
       </ul></div>
     </div>
@@ -247,6 +268,21 @@ def build_home(games):
     cloud = ''.join(f'<figure><img src="{icon_src(g)}" alt="{esc(g["name"])}" width="256" height="256"></figure>' for g in games)
     stack = ''.join(f'<img src="{icon_src(g)}" alt="" width="32" height="32">' for g in live)
     live_names = ' and '.join(g['name'] for g in live)
+    videos = ''.join(f'<figure class="video-card">{video_embed(g)}<figcaption><img src="{icon_src(g)}" alt="" width="32" height="32">'
+                     f'<a href="{game_url(g)}">{esc(g["name"])}</a></figcaption></figure>'
+                     for g in games if g.get('video'))
+    videos_section = f'''
+<section class="section section-white" id="videos">
+  <div class="container">
+    <div class="section-row">
+      {section_head('On YouTube', 'Watch our games in action', 'Trailers and gameplay clips from our YouTube channel.')}
+      {subscribe_button()}
+    </div>
+    <div class="video-grid">{videos}</div>
+  </div>
+</section>''' if videos else ''
+    # keep white and tinted sections alternating
+    alt = ('section', 'section section-white', 'section') if videos else ('section section-white', 'section', 'section pt-0')
     main = f'''<section class="hero">
   <div class="container hero-grid">
     <div>
@@ -271,8 +307,9 @@ def build_home(games):
     </div>
   </div>
 </section>
+{videos_section}
 
-<section class="section section-white" id="coming-soon">
+<section class="{alt[0]}" id="coming-soon">
   <div class="container">
     {section_head('Coming soon', 'More games on the way', 'These games are getting ready for Google Play. Store links will appear here as soon as they are live.')}
     <div class="game-grid">
@@ -281,7 +318,7 @@ def build_home(games):
   </div>
 </section>
 
-<section class="section" id="about">
+<section class="{alt[1]}" id="about">
   <div class="container about">
     {section_head('About us', 'Fun first, then everything else', f'{STUDIO} is a small independent studio. We build games you can understand in seconds and keep coming back to: clear rules, short levels and plenty of personality.')}
     <div class="values">
@@ -293,7 +330,7 @@ def build_home(games):
   </div>
 </section>
 
-<section class="section pt-0" id="contact">
+<section class="{alt[2]}" id="contact">
   <div class="container">
     <div class="cta-band">
       <div><h2>Questions or feedback?</h2><p>Get in touch for support, ideas or privacy requests.</p></div>
@@ -363,6 +400,16 @@ def build_game(games, g):
       <div><h2>Coming soon to Google Play</h2><p>{esc(g['name'])} is getting ready for release. Until then, try our games that are already live.</p></div>
       <div class="cta-actions">{others}</div>
     </div>'''
+    trailer = f'''
+<section class="section">
+  <div class="container trailer">
+    <div>
+      {section_head('Video', 'Watch the trailer', f"See {g['name']} in action, then find more clips on our YouTube channel.")}
+      {subscribe_button()}
+    </div>
+    {video_embed(g)}
+  </div>
+</section>''' if g.get('video') else ''
     more = ''.join(
         f'<a class="mini" href="{game_url(o)}"><img src="{icon_src(o)}" alt="" width="48" height="48" loading="lazy">'
         f'<span><strong>{esc(o["name"])}</strong><span>{"On Google Play" if o["live"] else "Coming soon"}</span></span></a>'
@@ -395,6 +442,7 @@ def build_game(games, g):
     <div class="shots {orient}">{strip}</div>
   </div>
 </section>
+{trailer}
 
 {''.join(render_section(sec) for sec in g['sections'])}
 

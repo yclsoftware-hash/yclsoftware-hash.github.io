@@ -3,9 +3,10 @@
     "slug": "draw-rescue",
     "folder": "PuzzleGame",
     "name": "Draw Rescue",
-    "title": "Draw Rescue: Ball Physics Game",
+    "title": "Draw Rescue: Line Ball Physics",
     "package": "com.FunGames_FunnyGames.Ball_Game.Road_Draw.Physics_Ball_Game.Ball_Game",
     "live": true,
+    "video": {"id": "7sO7XRPG5OE", "title": "Draw Rescue: Draw a Line, Save the Balls!", "vertical": true},
     "genre": "Ball physics game",
     "theme": {
       "accent": "#d6246e",
@@ -101,9 +102,10 @@
     "slug": "funcopter",
     "folder": "FunCopter",
     "name": "FunCopter",
-    "title": "FunCopter: Helicopter Game",
+    "title": "FunCopter: Helicopter Games",
     "package": "plane.helicopter_bird_flying.Wing",
     "live": true,
+    "video": {"id": "4YixRPea_ys", "title": "FunCopter: Official Gameplay Trailer"},
     "genre": "Helicopter air combat",
     "theme": {
       "accent": "#1270d0",
