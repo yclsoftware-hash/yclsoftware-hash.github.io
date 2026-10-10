@@ -113,24 +113,59 @@
       "grad": "radial-gradient(120% 95% at 50% 0%, #86d8ff 0%, #2b8ef1 50%, #1645b5 100%)",
       "cta": "linear-gradient(120deg, #1645b5 0%, #2b8ef1 60%, #4fc3ff 100%)"
     },
-    "short": "Choose your helicopter, attack but don't crash! Collect gold, unlock new copters and fly past monsters and aliens.",
-    "tagline": "Choose your helicopter, attack but don't crash, join the fun!",
-    "intro": "A high-speed air combat game full of thrilling maneuvers. Take down enemies in the sky, dodge the obstacles that await you and fight your way to victory.",
-    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["users", "For kids and adults"]],
+    "short": "Fly your copter, shoot down enemies and beat big bosses! Collect gold, unlock new flying machines and play offline.",
+    "tagline": "Fly your copter, shoot enemies, beat big bosses!",
+    "intro": "Hop in your copter, take to the skies and blast every enemy in your way. Fly through colorful worlds, dodge the obstacles and face bigger bosses the further you go.",
+    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["shield", "Boss battles"], ["cloud", "Cloud save"]],
+    "shotAlts": ["Boss battle against the Moth Queen", "Fly through sunset skies", "Take on giant war machines", "Hangar, fleet and daily gifts", "Swarms of enemies", "World map with power-ups", "Dodge and shoot", "Open crates for gold"],
     "sections": [
       {
         "type": "features",
         "cols": 3,
-        "kicker": "Features",
-        "title": "Built for sky-high fun",
+        "kicker": "Action in the sky",
+        "title": "Shoot, dodge and fly to victory",
+        "text": "Every level brings a fresh challenge: trust your reflexes and keep flying.",
         "items": [
-          ["star", "Fun helicopters", "Collect gold to unlock more fun flying helicopters."],
-          ["zap", "Unique attacks", "Each helicopter has its own armed attack and a special ability, so try different copters on tough levels."],
-          ["shield", "Power-ups", "Special items give you protective shields, shrinking and gold enlargement."],
-          ["compass", "Strange planets", "Explore different planets full of monsters and aliens."],
-          ["target", "Bombs on board", "Your helicopters carry bombs to clear the obstacles ahead."],
-          ["offline", "Play anywhere", "No internet connection needed to play."]
+          ["crosshair", "Air combat", "Shoot down waves of enemies and dodge everything they throw at you."],
+          ["shield", "Epic bosses", "Giant war machines and monsters wait at the end of each world."],
+          ["map", "Colorful worlds", "Fly from sunset skies to waterfall canyons, icy passes and volcanoes."]
         ]
+      },
+      {
+        "type": "features",
+        "cols": 2,
+        "kicker": "Choose your chopper",
+        "title": "A whole fleet to collect",
+        "items": [
+          ["star", "Many flying machines", "Collect gold as you fly and unlock new copters, each with its own style."],
+          ["trending", "Upgrade in the hangar", "Power up your favorite copter and make it stronger for the tougher levels."],
+          ["users", "Call your fleet", "Bring a fleet of helpers along to fight by your side."],
+          ["zap", "Power-ups", "Pick power-ups on the map before you take off, from lightning to repair kits."]
+        ]
+      },
+      {
+        "type": "features",
+        "cols": 3,
+        "kicker": "Google Play Games",
+        "title": "Compete and keep your progress",
+        "text": "Signing in is optional: you can play without it.",
+        "items": [
+          ["award", "Achievements", "Unlock achievements as you clear levels and grow your fleet."],
+          ["trending", "Weekly contest", "Climb the all-time and weekly leaderboards against other players."],
+          ["cloud", "Cloud save", "Pick up where you left off on a new phone, with your gold and copters."]
+        ]
+      },
+      {
+        "type": "perks",
+        "kicker": "Play anywhere",
+        "title": "Made for quick breaks and long flights",
+        "items": [
+          ["offline", "Play offline", "No internet or Wi-Fi needed."],
+          ["pointer", "Easy to learn", "Simple controls, hard to put down."],
+          ["award", "Daily rewards", "Daily gifts and crates full of gold."],
+          ["check", "No surprise ads", "A video only plays when you tap a reward button yourself."]
+        ],
+        "note": "Free to play, with optional in-app purchases (gold packs)."
       }
     ],
     "cta": "Ready for take-off?"

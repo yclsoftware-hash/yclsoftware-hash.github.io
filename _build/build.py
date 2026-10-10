@@ -79,8 +79,14 @@ def play_url(g):
     return f"https://play.google.com/store/apps/details?id={g['package']}" if g['live'] else None
 
 
+def versioned(url):
+    """Adds a content hash so browsers fetch a replaced image instead of the cached one."""
+    digest = hashlib.sha1((ROOT / url.lstrip('/')).read_bytes()).hexdigest()[:8]
+    return f'{url}?v={digest}'
+
+
 def icon_src(g):
-    return f"/assets/icons/{g['slug']}.png"
+    return versioned(f"/assets/icons/{g['slug']}.png")
 
 
 def shots(g):
@@ -89,7 +95,7 @@ def shots(g):
     out = []
     for p in files:
         with Image.open(p) as im:
-            out.append((f"/assets/img/{g['slug']}/{p.name}", im.width, im.height))
+            out.append((versioned(f"/assets/img/{g['slug']}/{p.name}"), im.width, im.height))
     return out
 
 
