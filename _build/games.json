@@ -187,7 +187,7 @@
     "short": "Practice addition, subtraction, multiplication and division with game-style challenges that get harder as you level up.",
     "tagline": "Practice math the fun way.",
     "intro": "Math questions turn into games: answer correctly and your character attacks, answer wrong and the enemy strikes back. Levels get harder step by step, from the four operations up to more advanced questions.",
-    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["users", "For all ages"]],
+    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["users", "For kids 5–12"]],
     "sections": [
       {
         "type": "steps",
