@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "plane.helicopter_bird_flying.Wing",
+      "sha256_cert_fingerprints": [
+        "BF:75:AF:43:CB:06:99:EB:68:56:F0:93:83:60:C6:92:67:E7:D3:88:39:35:A9:0D:59:C9:08:FB:D4:E8:A0:26"
+      ]
+    }
+  }
+]
