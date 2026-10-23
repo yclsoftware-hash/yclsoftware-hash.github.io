@@ -174,44 +174,67 @@
     "slug": "fun-math",
     "folder": "FunMath",
     "name": "Fun Math",
-    "title": "Fun Math: Math Games",
+    "title": "Math Games for Kids: Fun Math",
     "package": "com.fun.best.math.game.funfunnygames",
-    "live": false,
-    "genre": "Math learning game",
+    "live": true,
+    "video": {"id": "oQi2gU_9P1A", "title": "Fun Math: Math Games for Kids"},
+    "genre": "Math learning games for kids",
     "theme": {
       "accent": "#11803f",
       "soft": "#e5f6ec",
       "grad": "radial-gradient(120% 95% at 50% 0%, #86efac 0%, #22a55b 50%, #0f6b38 100%)",
       "cta": "linear-gradient(120deg, #0f6b38 0%, #22a55b 55%, #5fd68e 100%)"
     },
-    "short": "Practice addition, subtraction, multiplication and division with game-style challenges that get harder as you level up.",
-    "tagline": "Practice math the fun way.",
-    "intro": "Math questions turn into games: answer correctly and your character attacks, answer wrong and the enemy strikes back. Levels get harder step by step, from the four operations up to more advanced questions.",
-    "chips": [["smartphone", "Android"], ["offline", "Plays offline"], ["users", "For kids 5–12"]],
+    "short": "9 math mini games for kids: add, subtract, shapes, clock and money. Learn math through play, with no ads.",
+    "tagline": "Math kids love to play.",
+    "intro": "Fun Math turns practice into play: 9 colorful math games where solving is the game itself, not an extra quiz. Match candies that add up to 10, send jelly monsters through the True or False gate, build bridges with the right shapes and balance the scale.",
+    "chips": [["smartphone", "Android"], ["check", "No ads"], ["users", "For kids 5–12"]],
+    "shotAlts": ["Home screen with Professor Owl", "Stats and the parent report", "9 math games in one app", "Number Candy: practice adding to 10", "Clock Town: learn to tell time", "Money Shop: pay and give change", "Balance Scale: first steps to equations", "Parent report: skill map and weak topics"],
     "sections": [
       {
-        "type": "steps",
-        "kicker": "Game modes",
-        "title": "Three ways to practice",
+        "type": "features",
+        "cols": 3,
+        "kicker": "9 games in one app",
+        "title": "Every level is a small puzzle",
+        "text": "Every puzzle is real practice, with 30 levels in every game.",
         "items": [
-          ["Battle", "Your correct answers attack your character's enemy. Answer wrong and the enemy attacks you."],
-          ["Reach the number", "Get a target number for your level and reach it by combining numbers with the operations."],
-          ["Listen and find", "Listen to numbers spoken in English and pick the right one while you learn them."]
+          ["plus", "Number Candy", "Connect sweets that make 10 and fill the ten frame."],
+          ["check", "True or False Gate", "Is 7 + 5 = 12? Swipe the monster to the right gate."],
+          ["layers", "Bridge Builder", "Shapes, turning, symmetry and angles."],
+          ["target", "Target Number Rally", "Plan your sum with +3, −2 and ×2 tokens."],
+          ["trending", "Elevator Master", "Move on the number line in the fewest steps."],
+          ["divide", "Balance Scale", "Equal sides, the first step toward equations."],
+          ["clock", "Clock Town", "Read the clock: o'clock, half past, quarter and minutes."],
+          ["star", "Money Shop", "Pay and give the right change."],
+          ["volume", "Listen to the Number", "Hear it in English and find it, from 1 to 100."]
         ]
       },
       {
         "type": "features",
         "cols": 2,
-        "kicker": "What you practice",
-        "title": "All four operations",
+        "kicker": "Made for learning",
+        "title": "Learn by doing, step by step",
         "items": [
-          ["plus", "Addition and subtraction", "Warm up with sums and differences, then speed up."],
-          ["divide", "Multiplication and division", "Move on to times tables and division questions."],
-          ["trending", "Levels that grow with you", "As the levels progress, the questions become more difficult."],
-          ["refresh", "Learn by repeating", "Replay a level as often as you like to get better at it."]
+          ["layers", "Real math topics", "Addition and subtraction, counting, place value, shapes, time and money."],
+          ["eye", "Mistakes that teach", "Wrong moves are not punished: a ten frame, number line or blocks show why."],
+          ["refresh", "Concrete to abstract", "From objects to pictures to numbers, one step at a time."],
+          ["shield", "Bosses and bonus rounds", "A boss every 10 levels and a True or False bonus round."]
         ]
+      },
+      {
+        "type": "perks",
+        "kicker": "Safe for families",
+        "title": "Made with parents in mind",
+        "items": [
+          ["check", "No ads", "Nothing interrupts the game."],
+          ["smile", "No violence", "Monsters turn into candy."],
+          ["shield", "Parent gate", "An adult must verify before any purchase."],
+          ["award", "Parent report", "Skill map, weak topics and weekly play time."]
+        ],
+        "note": "Two games are fully open; the others start with 3 open levels. One Full Version purchase unlocks everything, no subscription. Coins are earned by playing and only unlock avatars and themes."
       }
-    ]
+    ],
+    "cta": "Ready to make math fun?"
   },
   {
     "slug": "fun-run-maze",
