@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds the static site from _build/games.json and _build/privacy/*.html.
+"""Builds the static site from _build/games.json, _build/privacy/*.html and _build/terms/*.html.
 
 Run from anywhere:  python _build/build.py
 Needs Pillow (reads screenshot sizes). Folders starting with "_" are not published by GitHub Pages.
@@ -73,6 +73,10 @@ def game_url(g):
 
 def privacy_url(g):
     return game_url(g) + 'privacy.html'
+
+
+def terms_url(g):
+    return game_url(g) + 'terms.html'
 
 
 def play_url(g):
@@ -182,6 +186,7 @@ def header(current=''):
 def footer(games):
     game_links = ''.join(f'<li><a href="{game_url(g)}">{esc(g["name"])}</a></li>' for g in games)
     privacy_links = ''.join(f'<li><a href="{privacy_url(g)}">{esc(g["name"])}</a></li>' for g in games)
+    terms_links = ''.join(f'<li><a href="{terms_url(g)}">{esc(g["name"])}</a></li>' for g in games)
     return f'''<footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -191,6 +196,7 @@ def footer(games):
       </div>
       <div><h4>Games</h4><ul>{game_links}</ul></div>
       <div><h4>Privacy policies</h4><ul>{privacy_links}</ul></div>
+      <div><h4>Terms of Service</h4><ul>{terms_links}</ul></div>
       <div><h4>Studio</h4><ul>
         <li><a href="/#about">About us</a></li>
         <li><a href="{DEV_URL}">All games on Google Play</a></li>
@@ -250,7 +256,7 @@ def live_card(g):
       {store_button(play_url(g))}
       <a class="text-link" href="{game_url(g)}">Learn more {icon('arrow')}</a>
     </div>
-    <div class="card-foot">{icon('file')}<a href="{privacy_url(g)}">Privacy policy</a></div>
+    <div class="card-foot">{icon('file')}<a href="{privacy_url(g)}">Privacy policy</a> &middot; <a href="{terms_url(g)}">Terms</a></div>
   </div>
 </article>'''
 
@@ -435,6 +441,7 @@ def build_game(games, g):
         <div class="hero-cta">
           {cta_btn}
           <a class="btn btn-ghost" href="{privacy_url(g)}">{icon('file')}Privacy policy</a>
+          <a class="btn btn-ghost" href="{terms_url(g)}">{icon('file')}Terms of Service</a>
         </div>
       </div>
       {hero_art(g)}
@@ -478,10 +485,10 @@ def slugify(text):
     return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
 
 
-def legal_html(raw):
+def legal_html(raw, doc_title='Privacy Policy'):
     """Turn the generator's <strong>/<br> layout into h2 sections without changing any wording."""
     t = re.sub(r'<!--.*?-->', '', raw, flags=re.S).strip()
-    t = re.sub(r'^<strong>Privacy Policy</strong>', '', t)
+    t = re.sub(r'^<strong>' + re.escape(doc_title) + r'</strong>', '', t)
     headings = []
 
     def to_h2(m):
@@ -495,21 +502,28 @@ def legal_html(raw):
     t = re.sub(r'<p>\s*</p>', '', t)
     t = re.sub(r'\n{2,}', '\n', t).strip()
     # Wording must match the source exactly (only the page title moves into the hero).
-    if plain_text(raw) != ('Privacy Policy ' + plain_text(t)):
-        raise SystemExit('privacy text changed during conversion')
+    if plain_text(raw) != (doc_title + ' ' + plain_text(t)):
+        raise SystemExit(f'{doc_title} text changed during conversion')
     return t, headings
 
 
-def build_privacy(games, g):
-    raw = (SRC / 'privacy' / f"{g['folder']}.html").read_text(encoding='utf-8')
-    body, headings = legal_html(raw)
+LEGAL = {
+    'privacy': ('Privacy Policy', 'Privacy policy', privacy_url, 'Privacy questions?', 'How the {} app for Android handles your information.'),
+    'terms': ('Terms of Service', 'Terms of Service', terms_url, 'Questions about these terms?', 'The rules for using the {} app for Android.'),
+}
+
+
+def build_legal(games, g, kind):
+    doc_title, sub, url, ask, intro = LEGAL[kind]
+    raw = (SRC / kind / f"{g['folder']}.html").read_text(encoding='utf-8')
+    body, headings = legal_html(raw, doc_title)
     toc = ''.join(f'<li><a href="#{hid}">{title}</a></li>' for hid, title in headings)
     main = f'''<section class="doc-hero">
   <div class="container">
-    <ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="{game_url(g)}">{esc(g['name'])}</a></li><li>Privacy Policy</li></ol>
+    <ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="{game_url(g)}">{esc(g['name'])}</a></li><li>{doc_title}</li></ol>
     <a class="doc-app" href="{game_url(g)}"><img src="{icon_src(g)}" alt="" width="30" height="30">{esc(g['title'])}</a>
-    <h1>Privacy Policy</h1>
-    <p>How the {esc(g['title'])} app for Android handles your information.</p>
+    <h1>{doc_title}</h1>
+    <p>{intro.format(esc(g['title']))}</p>
   </div>
 </section>
 
@@ -517,7 +531,7 @@ def build_privacy(games, g):
   <aside class="toc" aria-label="On this page">
     <p class="toc-title">On this page</p>
     <ol>{toc}</ol>
-    <div class="toc-contact"><strong>Privacy questions?</strong><a href="mailto:{EMAIL}">{EMAIL}</a></div>
+    <div class="toc-contact"><strong>{ask}</strong><a href="mailto:{EMAIL}">{EMAIL}</a></div>
   </aside>
   <div>
     <details class="toc-mobile"><summary>On this page</summary><ol>{toc}</ol></details>
@@ -526,8 +540,8 @@ def build_privacy(games, g):
     </article>
   </div>
 </div>'''
-    desc = f"Privacy policy for the {g['title']} app for Android by {STUDIO}."
-    return page(games, f"Privacy Policy | {g['title']}", desc, privacy_url(g), f"/assets/img/{g['slug']}/feature.jpg",
+    desc = f"{sub} for the {g['title']} app for Android by {STUDIO}."
+    return page(games, f"{doc_title} | {g['title']}", desc, url(g), f"/assets/img/{g['slug']}/feature.jpg",
                 main, style=theme_style(g))
 
 
@@ -550,7 +564,7 @@ def build_404(games):
 
 def build_sitemap(games):
     # Every game is listed, live or not, so upcoming games are indexed before launch.
-    paths = ['/'] + [p for g in games for p in (game_url(g), privacy_url(g))]
+    paths = ['/'] + [p for g in games for p in (game_url(g), privacy_url(g), terms_url(g))]
     urls = ''.join(f'  <url><loc>{BASE}{p}</loc></url>\n' for p in paths)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -574,7 +588,8 @@ def main():
     write('404.html', build_404(games))
     for g in games:
         write(f"funfunnygames/{g['folder']}/index.html", build_game(games, g))
-        write(f"funfunnygames/{g['folder']}/privacy.html", build_privacy(games, g))
+        write(f"funfunnygames/{g['folder']}/privacy.html", build_legal(games, g, 'privacy'))
+        write(f"funfunnygames/{g['folder']}/terms.html", build_legal(games, g, 'terms'))
     write('sitemap.xml', build_sitemap(games))
     write('robots.txt', build_robots())
 

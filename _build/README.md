@@ -13,10 +13,11 @@ Pillow gerekir (`pip install pillow`).
 |---|---|
 | `games.json` | Oyunlar: ad, açıklama, renkler, özellik bölümleri, `live` (Play'de yayında mı) |
 | `privacy/<Klasör>.html` | Her oyunun gizlilik politikası metni (üretici aracının ham HTML'i) |
+| `terms/<Klasör>.html` | Her oyunun Hizmet Şartları metni (aynı ham biçim; Play › Tacirlik › Hizmet Şartları URL'si) |
 | `build.py` | Ortak üst menü + alt bilgi + sayfa şablonları |
 | `../assets/css/site.css` | Tüm tasarım |
 
-Üretilen sayfalar: `index.html`, `404.html`, `funfunnygames/<Klasör>/index.html` ve `privacy.html`,
+Üretilen sayfalar: `index.html`, `404.html`, `funfunnygames/<Klasör>/index.html`, `privacy.html` ve `terms.html`,
 `sitemap.xml` (yayında olsun olmasın tüm oyunlar) ve `robots.txt`.
 
 ## Sık işler

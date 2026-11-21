@@ -351,7 +351,7 @@ svg { flex: none; }
 
 /* Footer */
 .site-footer { padding: 60px 0 28px; background: #fff; border-top: 1px solid var(--line); }
-.footer-grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 32px; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 32px; }
 .footer-brand p { max-width: 300px; margin: 16px 0 0; font-size: 15px; color: var(--muted); }
 .site-footer h4 {
   margin-bottom: 16px;
@@ -536,7 +536,7 @@ svg { flex: none; }
   .doc-layout { grid-template-columns: 1fr; gap: 0; padding-top: 28px; }
   .toc { display: none; }
   .toc-mobile { display: block; }
-  .footer-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: repeat(4, 1fr); }
   .footer-brand { grid-column: 1 / -1; }
 }
 @media (max-width: 860px) {
